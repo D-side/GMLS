@@ -1,8 +1,10 @@
 --- 
 code: 
   - |-
-      //Since there are no bools in GML
-      //Numbers 0 and 1 have to act in their place
+      //EN: Since there are no booleans in GML
+      //    Numbers 0 and 1 have to act in their place
+      //RU: Ну нет в GML логического типа
+      //    вот цифры 0 и 1 за него и отдуваются.
       return (argument0 < argument1) * argument0 + (argument0 >= argument1) * argument1;
 date: 2014-02-09 16:00:00
 layout: post
@@ -16,5 +18,5 @@ author: <a class="btn btn-sm btn-primary" href="https://vk.com/rustam_azizov"><i
 ---
 
 {% highlight c %}
-  {{ page.code[0] }}
+{{ page.code[0] }}
 {% endhighlight %}

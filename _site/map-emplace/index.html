@@ -42,10 +42,12 @@
                 	<p class="meta">09 Feb 2014</p>
 
 	<div class="post well well-sm">
-	<p>I heard YoYo are adding data accessors for maps, so it&#39;s sort of obsolete.</p>
-
-<div class="highlight"><pre><code class="c">  <span class="k">if</span> <span class="nf">ds_map_exists</span><span class="p">(</span><span class="n">argument0</span><span class="p">,</span><span class="n">argument1</span><span class="p">)</span>
-<span class="n">ds_map_delete</span><span class="p">(</span><span class="n">argument0</span><span class="p">,</span><span class="n">argument1</span><span class="p">);</span>
+	<div class="highlight"><pre><code class="c"><span class="c1">//EN: I heard YoYo are adding data accessors for maps</span>
+<span class="c1">//    So it&#39;s sort of obsolete.</span>
+<span class="c1">//RU: Слышал, YoYo добавляют для мапов особые операции</span>
+<span class="c1">//    Возможно, это уже и не понадобится</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">ds_map_exists</span><span class="p">(</span><span class="n">argument0</span><span class="p">,</span><span class="n">argument1</span><span class="p">))</span>
+  <span class="n">ds_map_delete</span><span class="p">(</span><span class="n">argument0</span><span class="p">,</span><span class="n">argument1</span><span class="p">);</span>
 <span class="n">ds_map_add</span><span class="p">(</span><span class="n">argument0</span><span class="p">,</span><span class="n">argument1</span><span class="p">,</span><span class="n">argument2</span><span class="p">);</span>
 </code></pre></div>
 
