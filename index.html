@@ -10,7 +10,7 @@ icon: time
 		    <h3 class="post-heading">
 				<a href="{{ post.url }}"><code>{{ post.title }}{{post.arguments}}</code></a> by {{ post.author }}<span class="post-date label label-success">{{ post.date | date_to_string }}</span></h3>
 				<div class="clearfix"></div>
-			    <div>{{ post.excerpt }}</div>
+			    <div>{{ post.content }}</div>
 				<div>tagged: 
 					{% for tag in post.tags %}
 					<span class="label label-primary">{{ tag }}</span>
