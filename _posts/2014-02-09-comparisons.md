@@ -4,7 +4,7 @@ code:
   - |-
       //Since there are no bools in GML
       //Numbers 0 and 1 have to act in their place
-      return (argument0 < argument1) * a + (argument0 >= argument1) * argument1;
+      return (argument0 < argument1) * argument0 + (argument0 >= argument1) * argument1;
 date: 2014-02-09
 layout: post
 tags: 
