@@ -4,7 +4,7 @@ code:
       if ds_map_exists(argument0,argument1)
       ds_map_delete(argument0,argument1);
       ds_map_add(argument0,argument1,argument2);
-date: 2014-02-09
+date: 2014-02-09 17:00:00
 layout: post
 tags: 
   - data structures
