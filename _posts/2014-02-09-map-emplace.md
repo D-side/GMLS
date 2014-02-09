@@ -1,5 +1,4 @@
 --- 
-category: 
 code: 
   - |-
       if ds_map_exists(argument0,argument1)
@@ -9,7 +8,6 @@ date: 2014-02-09
 layout: post
 tags: 
   - data structures
-  - 
 title: ds_map_emplace
 arguments: (map, key, value)
 author: <a class="btn btn-sm btn-primary" href="https://vk.com/grindcoreopera"><i class="icon-vk">/</i>grindcoreopera</a>

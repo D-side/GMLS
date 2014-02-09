@@ -1,5 +1,4 @@
 --- 
-category: wtf
 code: 
   - |-
       //Since there are no bools in GML
