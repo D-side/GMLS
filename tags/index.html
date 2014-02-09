@@ -1,10 +1,14 @@
 ---
 layout: default
-title: Tag cloud
+title: All functions by tags
 icon: tags
 ---
 
-<h3>Looking for something?</h3>
-<div class="well well-lg">
-This page is under construction. Sorry, folks.
-</div>
+{% for tag in site.tags %}
+  <h3><span class="btn btn-primary btn-sm disabled">{{tag[1] | size}}</span> of <span class="btn btn-success btn-sm disabled">{{ tag[0] }}</span></h3>
+  <div class="well">
+  {% for entry in tag[1] %}
+    <p><a href="{{entry.url}}"><code>{{entry.title}}{{entry.arguments}}</code></a></p>
+  {% endfor %}
+  </div>
+{% endfor %}
