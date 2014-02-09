@@ -2,3 +2,4 @@ name: D:\side\GML\
 markdown: redcarpet
 pygments: true
 permalink: /:categories/:title/
+excerpt_separator:

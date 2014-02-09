@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://blog.dside.ru/map-emplace/</loc>
+		<lastmod>2014-02-09</lastmod>
+    </url>
+    
+    <url>
         <loc>http://blog.dside.ru/wtf/comparisons/</loc>
 		<lastmod>2014-02-09</lastmod>
     </url>
