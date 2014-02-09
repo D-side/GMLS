@@ -1,0 +1,17 @@
+---
+layout: list
+title: Most recent
+icon: time
+---
+
+<div id="home">
+    {% for post in site.posts %}
+		<div class="well well-sm post">
+		    <h3 class="post-heading">
+				<span class="primary-cat"><a class="btn btn-primary btn-xs" href="{{ post.url }}#disqus_thread"></a></span> 
+				<a href="{{ post.url }}">{{ post.title }}</a><span class="post-date label label-success">{{ post.date | date_to_string }}</span></h3>
+				<div class="clearfix"></div>
+			    <div>{{ post.excerpt }}</div>
+		</div>
+    {% endfor %}
+</div>
