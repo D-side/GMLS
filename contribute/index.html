@@ -1,0 +1,44 @@
+---
+layout: default
+title: Prepare your script
+icon: plus-sign-alt
+---
+
+<div class="well well-lg">
+<p>So you want to add something? Please make good use of my time and speed up your script's path into the public by preparing the necessary info in the format appropriate for my site. Not much hassle, I assure you.</p>
+<p>Let's be practical: it's YAML, it's in Jekyll, and one of the commented (# blahblahblah) examples is right here:</p>
+{% highlight yaml %}{% raw %}
+--- 
+# Actual code. Remember to precede each line with enough spaces, that is important.
+code: 
+  - |-
+      //EN: Since there are no booleans in GML
+      //    Numbers 0 and 1 have to act in their place
+      //RU: Ну нет в GML логического типа
+      //    вот цифры 0 и 1 за него и отдуваются.
+      return (argument0 < argument1) * argument0 + (argument0 >= argument1) * argument1;
+# Date and time: please don't make a mess of the order
+date: 2014-02-09 16:00:00
+# Don't touch this line. It's the site's structure that defines it.
+layout: post
+# Tag your script! One tag per line.
+tags: 
+  - wtf
+  - math
+  - one line
+# Script name, to be ued as a function name. Use a valid GML name here.
+title: wtf_min
+# Just a reference for users, one-word explaination of what are the arguments
+arguments: (a, b)
+# You're the author, and that's what gets included after "by" in plain HTML.
+author: <a class="btn btn-sm btn-primary" href="https://vk.com/rustam_azizov"><i class="icon-vk">/</i>rustam_azizov</a>
+# All the rest below is syntax for displaying your code. Don't modify.
+# I use C highlighting, as it's the closest to GML.
+---
+
+{% highlight c %}
+{{ page.code[0] }}
+{% endhighlight %}
+{% endraw %}{% endhighlight %}
+<p>Site's source code is <a href="https://github.com/D-side/GMLS/tree/gh-pages/_posts">over there</a>, your files will be placed in exactly that directory. If your file happens to be named and formatted appropriately, I just put it into that folder and push the changes. You could make things even easier by making a pull request.</p>
+</div>
