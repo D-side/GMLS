@@ -7,8 +7,8 @@ icon: time
 <div id="home">
     {% for post in site.posts %}
 		<div class="well well-sm post">
-		    <h3 class="post-heading">
-				<a href="{{ post.url }}"><code>{{ post.title }}</code><wbr/><code>{{post.arguments}}</code></a> by {{ post.author }}<span class="post-date label label-success">{{ post.date | date_to_string }}</span></h3>
+		    <h4 class="post-heading">
+				<a href="{{ post.url }}"><code>{{ post.title }}</code><wbr/><code>{{post.arguments}}</code></a> by {{ post.author }}<span class="post-date label label-success">{{ post.date | date_to_string }}</span></h4>
 				<div class="clearfix"></div>
 			    <div>{{ post.content }}</div>
 				<div>tagged: 

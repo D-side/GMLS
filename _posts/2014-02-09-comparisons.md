@@ -14,7 +14,7 @@ tags:
   - one line
 title: wtf_min
 arguments: (a, b)
-author: <a class="btn btn-sm btn-primary" href="https://vk.com/rustam_azizov"><i class="icon-vk">/</i>rustam_azizov</a>
+author: <a class="btn btn-xs btn-primary" href="https://vk.com/rustam_azizov"><i class="icon-vk">/</i>rustam_azizov</a>
 ---
 
 {% highlight c %}

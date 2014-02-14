@@ -6,9 +6,20 @@ icon: tags
 
 {% for tag in site.tags %}
   <h3><span class="btn btn-primary btn-sm disabled">{{tag[1] | size}}</span> of <span class="btn btn-success btn-sm disabled">{{ tag[0] }}</span></h3>
-  <div class="well">
-  {% for entry in tag[1] %}
-    <p><a href="{{entry.url}}"><code>{{entry.title}}{{entry.arguments}}</code></a></p>
-  {% endfor %}
-  </div>
+	<div class="well">
+  	{% case tag[0] %}
+
+	{% when "wtf" %}
+	<p>These scripts are usually not practical, but give some insights on how GML works. Even more so, if script's name begins with <code>wtf_</code>. They are short though.</p>
+
+	{% when "math" %}
+	<p>You may not want to know how that works inside. But it's purely computational stuff. Mathematics it is.</p>
+
+	{% endcase %}
+
+	{% for entry in tag[1] %}
+		<p><a href="{{entry.url}}"><code>{{entry.title}}{{entry.arguments}}</code></a></p>
+	{% endfor %}
+
+	</div>
 {% endfor %}

@@ -14,7 +14,7 @@ tags:
   - data structures
 title: ds_map_emplace
 arguments: (map, key, value)
-author: <a class="btn btn-sm btn-primary" href="https://vk.com/grindcoreopera"><i class="icon-vk">/</i>grindcoreopera</a>
+author: <a class="btn btn-xs btn-primary" href="https://vk.com/grindcoreopera"><i class="icon-vk">/</i>grindcoreopera</a>
 ---
 
 {% highlight c %}
