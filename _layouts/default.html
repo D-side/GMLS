@@ -5,12 +5,10 @@
         <title>{{ page.title }} | {{ site.name }}</title>
         <meta name="viewport" content="width=device-width">
 
-        
-
 		<link href="/css/bootstrap-light.css" rel="stylesheet"
         type="text/css" id="stl" title="light" />
 		<link href="/css/bootstrap-dark.css" rel="alternate stylesheet" 
-        type="text/css" title="dark" />
+        type="text/css" title="dark" disabled />
 		<!-- Syntax CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
 		<!-- Custom stuff -->
@@ -30,8 +28,7 @@
 				<a class="btn btn-default" title="Home" href="/"><i class="icon-time"> </i></a>
 				<a class="btn btn-default" title="Tag cloud" href="/tags/"><i class="icon-tags"> </i></a>
 				<a class="btn btn-default" title="About this site" href="/about/"><i class="icon-question-sign"> </i></a>
-	  			<a class="btn btn-default" onclick="switch_style('light');return false;" id="dark"><i class="icon-sun"> </i></a>
-	  			<a class="btn btn-default" onclick="switch_style('dark');return false;" id="light"><i class="icon-moon"> </i></a>
+	  			<a class="btn btn-default" onclick="switch_style_single();return false;"><i class="icon-adjust"> </i></a>
 			</div>
 			  			
             </div>

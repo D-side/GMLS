@@ -1,3 +1,21 @@
+/*
+
+Use: Add input toggles such as:
+
+    <form>
+      <input type="submit" onclick="switch_style('dark');return false;" 
+             name="theme" value="dark" id="dark" class="btn btn-mini pull-right"> 
+      <input type="submit" onclick="switch_style('light');return false;" 
+             name="theme" value="light" id="light" class="btn btn-mini pull-right">
+    </form>
+
+into the relevant html. Also be sure to include the javascript in the header so that css changes automatically first. 
+
+    <script type="text/javascript" src="{{ site.url }}/assets/js/switch-css.js"></script>
+    <script type="text/javascript"> set_style_from_cookie(); </script> 
+*/
+
+
 var style_cookie_name = "style" ;
 var style_cookie_duration = 30 ;
 
@@ -44,6 +62,22 @@ function switch_style ( css_title )
       if (link_tag[i].title == css_title) {
         link_tag[i].disabled = false ;
       }
+    }
+    set_cookie( style_cookie_name, css_title,
+      style_cookie_duration );
+  }
+}
+
+function switch_style_single ()
+{
+  var i, link_tag, css_title ;
+  for (i = 0, link_tag = document.getElementsByTagName("link") ;
+    i < link_tag.length ; i++ ) {
+    if ((link_tag[i].rel.indexOf( "stylesheet" ) != -1) &&
+      link_tag[i].title) {
+      if (link_tag[i].disabled)
+      {css_title = link_tag[i].title;}
+      link_tag[i].disabled = !(link_tag[i].disabled);
     }
     set_cookie( style_cookie_name, css_title,
       style_cookie_duration );
