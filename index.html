@@ -8,7 +8,9 @@ icon: time
     {% for post in site.posts %}
 		<div class="well well-sm post">
 		    <h4 class="post-heading">
-				<a href="{{ post.url }}"><code>{{ post.title }}</code><wbr/><code>{{post.arguments}}</code></a> by {{ post.author }}<span class="post-date label label-success">{{ post.date | date_to_string }}</span></h4>
+				<code>{{ post.title }}</code><wbr/><code>{{post.arguments}}</code> by {{ post.author }}<span class="post-date label label-success">{{ post.date | date_to_string }}</span></h4>
+				<div class="clearfix"></div>
+				<div><a href="{{ post.url }}" class="btn btn-xs btn-default btn-block"><i class="icon-download-alt"> </i>Export GML (right-click, <code>Save target as...</code>)</a></div>
 				<div class="clearfix"></div>
 			    <div>{{ post.content }}</div>
 				<div>tagged: 
