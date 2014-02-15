@@ -10,7 +10,7 @@ icon: time
 		    <h4 class="post-heading">
 				<code>{{ post.title }}</code><wbr/><code>{{post.arguments}}</code> by {{ post.author }}<span class="post-date label label-success">{{ post.date | date_to_string }}</span></h4>
 				<div class="clearfix"></div>
-				<div><a href="{{ post.url }}" class="btn btn-xs btn-default btn-block"><i class="icon-download-alt"> </i>Export GML (right-click, <code>Save target as...</code>)</a></div>
+				<div><a href="{{ post.url }}" class="btn btn-xs btn-default btn-block"><i class="icon-download-alt"> </i>Export GML (right-click, "Save target as...", <code>{{post.title}}.gml</code>)</a></div>
 				<div class="clearfix"></div>
 			    <div>{{ post.content }}</div>
 				<div>tagged: 
